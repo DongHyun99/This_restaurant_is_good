@@ -1,8 +1,10 @@
-package com.kyonggi.restaurantmemo;
+package com.kyonggi.restaurantmemo.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.kyonggi.restaurantmemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
