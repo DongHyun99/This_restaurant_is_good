@@ -1,4 +1,5 @@
 package com.kyonggi.restaurantmemo.Room;
 
-public class ItemDAO {
+public class Itemc {
+
 }
