@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantMemo">
         <activity
+            android:name=".Activity.SettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.MainActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
