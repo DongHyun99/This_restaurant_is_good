@@ -2,27 +2,42 @@
     <string name="app_name">이집맛집이네!</string>
     <string name="add">추가하기</string>
     <string name="search">검색</string>
-    <string name="filter">필터</string>
-    <string name="add_item">Add Item</string>
     <string name="delete">삭제</string>
     <string name="empty">목록이 비어있습니다</string>
-    <string name="main_title">맛집모음!</string>
-    <string name="add_title">추가하기</string>
+    <string name="main_title">맛집 모음!</string>
+    <string name="add_title">맛집 추가</string>
     <string name="itemNameHint">이름을 입력해주세요 (필수)</string>
-    <string name="itemLinkHint">링크를 입력해주세요</string>
     <string name="itemPriceHint">가격을 입력해주세요 (단위 : 원, 필수)</string>
-    <string name="itemNameError">이름은 필수 입력 항목입니다</string>
-    <string name="itemPriceError">가격은 필수 입력 항목입니다</string>
-    <string name="completeDialog">맛집 등록을 할까요?</string>
-    <string name="itemMemoHint">이집의 특징을 남겨주세요</string>
-    <string name="completeButton">맛집등록!</string>
+    <string name="completeDialog">맛집 등록을 하시겠습니까?</string>
+    <string name="editDialog">수정을 하시겠습니까?</string>
+    <string name="noItemMemo">등록된 메모가 없습니다</string>
+    <string name="itemMemoHint">이 맛집의 특징을 간략하게 남겨주세요</string>
+    <string name="completeButton">등록</string>
     <string name="cancelButton">취소하기</string>
     <string name="edit">수정</string>
-    <string name="detailTitle">자세히 보기</string>
     <string name="setting_title">설정</string>
 
     <string name="email_title">이메일 보내기</string>
     <string name="InfoText">정보</string>
     <string name="pref_Info">앱정보</string>
     <string name="feedback_header">피드백</string>
+    <string name="addImage">이미지 추가</string>
+    <string name="itemRating">이 집의 별점?</string>
+    <string name="description">설명</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="empty_list">목록이 비어있습니다!</string>
+    <string name="pref_Info_data">앱데이터</string>
 </resources>

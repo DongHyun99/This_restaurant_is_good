@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="맛집"
-        android:id="@+id/menu_home"
+        android:id="@+id/navi_search"
         android:enabled="true"
-        android:icon="@drawable/outline_home_24"
-        />
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="검색"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
     <item
-        android:title="세팅"
-        android:id="@+id/menu_setting"
+        android:id="@+id/navi_favorite"
         android:enabled="true"
-        android:icon="@drawable/outline_settings_24"
-        />
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="즐겨찾기"
+        app:showAsAction="ifRoom" />
 </menu>

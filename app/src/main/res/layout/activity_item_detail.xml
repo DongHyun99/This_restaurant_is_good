@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ItemDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:menu="@menu/toolbar_menu_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:shapeAppearanceOverlay="@style/rounded_corner"
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/placeholder"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_16">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/itemRatingBar"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="NAME"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <RatingBar
+                android:id="@+id/itemRatingBar"
+                style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/primaryColor"
+                android:rating="3"
+                android:stepSize="0.5" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginHorizontal="@dimen/margin_24"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="4000"
+            android:textSize="14sp" />
+
+        <include
+            android:id="@+id/line1"
+            layout="@layout/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/itemMemoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_24"
+            android:paddingVertical="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_message_24"
+                app:tint="@color/primaryColor" />
+
+            <TextView
+                android:id="@+id/itemMemoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:paddingHorizontal="@dimen/margin_8"
+                android:text="@string/description"
+                android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemMemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginHorizontal="4dp"
+                android:ellipsize="end"
+                android:text="@string/noItemMemo"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/line2"
+            layout="@layout/line"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

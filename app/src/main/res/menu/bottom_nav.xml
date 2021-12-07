@@ -4,12 +4,12 @@
         android:title="맛집"
         android:id="@+id/menu_home"
         android:enabled="true"
-        android:icon="@drawable/outline_home_24"
+        android:icon="@drawable/ic_baseline_list_alt_24"
         />
     <item
         android:title="세팅"
         android:id="@+id/menu_setting"
         android:enabled="true"
-        android:icon="@drawable/outline_settings_24"
+        android:icon="@drawable/ic_baseline_settings_24"
         />
 </menu>

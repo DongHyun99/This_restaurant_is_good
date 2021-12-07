@@ -1,0 +1,42 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_Info">
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:key="name"
+            app:title="@string/app_name"
+            app:useSimpleSummaryProvider="true" />
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/pref_Info_data">
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:key="delete"
+            app:title="데이터 삭제"
+            app:useSimpleSummaryProvider="true" />
+    </androidx.preference.PreferenceCategory>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:allowDividerAbove="false"
+        app:iconSpaceReserved="false"
+        app:title="@string/feedback_header">
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:key="email"
+            app:summary="개발자에게 이메일을 전송합니다"
+            app:title="@string/email_title">
+        </androidx.preference.Preference>
+
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

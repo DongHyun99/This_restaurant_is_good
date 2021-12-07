@@ -7,5 +7,16 @@
     <color name="secondaryLightColor">#fff7ff</color>
     <color name="secondaryDarkColor">#a094b7</color>
     <color name="primaryTextColor">#000000</color>
-    <color name="secondaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#FFFFFF</color>
+
+
+
+    <!-- EditText -->
+    <color name="box_color">#8E71BA</color>
+    <color name="error_color">#970000</color>
+
+    <!-- button -->
+    <color name="button_color">#A890CC</color>
+    <!-- Memo Color -->
+    <color name="memo_color">#CAC4C4</color>
 </resources>
